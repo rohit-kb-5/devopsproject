@@ -3,10 +3,10 @@ MAINTAINER rohitkb2011@gmail.com
 RUN yum install -y httpd \
   zip \
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/loxury.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page270/marvel.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip loxury.zip 
-RUN cp -rvf loxury/* .
-RUN rm -rf loxury loxury.zip
+RUN unzip marvel.zip 
+RUN cp -rvf 2115_marvel/* .
+RUN rm -rf 2115_marvel marvel.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
