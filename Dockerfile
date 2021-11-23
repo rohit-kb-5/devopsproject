@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page270/ma
 WORKDIR /var/www/html
 RUN unzip marvel.zip 
 RUN cp -rvf 2115_marvel/* .
-RUN rm -rf 2115_marvel loxury.zip
+RUN rm -rf 2115_marvel marvel.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
